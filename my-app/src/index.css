@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --primaryColor: #5a9fc2;
+  --secondaryColor: #ffc800; /*ccf65f*/
+}
+
+html,
+body {
+  font-family: "Urbanist", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.048);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(117, 117, 117);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primaryColor);
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1800px) {
+  .container {
+    width: calc(100% - 600px);
+  }
+}
+
+@media (max-width: 1640px) {
+  .container {
+    width: calc(100% - 400px);
+  }
+}
+
+@media (max-width: 1540px) {
+  .container {
+    width: calc(100% - 300px);
+  }
+}
+
+@media (max-width: 1440px) {
+  .container {
+    width: calc(100% - 200px);
+  }
+}
+
+@media (max-width: 1060px) {
+  .container {
+    width: calc(100% - 100px);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: calc(100% - 50px);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: calc(100% - 30px);
+  }
+}
+
+a,
+article,
+button,
+div,
+span,
+i,
+b,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+ul,
+li,
+select,
+label,
+textarea {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "Urbanist", sans-serif;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  font-family: "Urbanist", sans-serif;
+}
+
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+  color: transparent;
+}
+
+video::-internal-media-controls-overlay-cast-button {
+  display: none;
+}
+
+textarea {
+  resize: none;
+  font-family: "Urbanist", sans-serif;
+}
+
+::-moz-selection {
+  color: white;
+  background: #1d1d1d;
+}
+
+::selection {
+  color: white;
+  background: #1d1d1d;
+}
+
+p {
+  font-family: "Urbanist", sans-serif;
+}
+
+
+/* title */
+.titleTag{
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+.titleTag .icon{
+  width: 20px;
+  height: 20px;
+  color: var(--secondaryColor);
+  margin-top: 5px;
+  animation: iconAnimation 1.5s linear infinite;
+}
+.titleTag .icon svg{
+  width: 100%;
+  height: 100%;
+}
+@keyframes iconAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.titleTag h3{
+  font-size: 26px;
+  font-weight: 500;
+  width: fit-content;
+}
+@media(max-width:1200px){
+    .titleTag h3{
+        font-size: 22px;
+    }
+}
+
+
+/* title */
+.title{
+    font-size: 3em;
+    font-weight: 600;
+}
+@media(max-width:1200px){
+    .title{
+        font-size: 2.5em;
+    }
+}
+@media(max-width:500px){
+    .title{
+        font-size: 2.2em;
+    }
+}
