@@ -82,6 +82,7 @@ const TeamList = () => {
                         <div className="name">Rahul A M</div>
                         <div className="connect">
                             <a href="tel:+919037527100">+91 90375 27100</a>
+                            <a href="tel:+421905600363">+421 905 600 363</a>
                             <a href="mailto:rahul@raya.group">rahul@raya.group</a>
                         </div>
                     </div>
